@@ -2,7 +2,7 @@ html body {
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     width: 100vh;
@@ -10,18 +10,24 @@ html body {
 }
 
 #container {
-    height: 500px;
-    width: 500px;
+    height: 420px;
+    width: 420px;
     background-color: pink;
     display: flex;
     flex-wrap: wrap;
 }
 
+.buttonarea {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
 .blue {
     flex: 1;
     flex-basis: auto;
-    width: 30px;
-    border: 1px solid rgb(139, 139, 139);
+    width: 13px;
+    /* border: 1px solid rgb(139, 139, 139); */
     box-sizing: border-box;
     background-color: blue;
     
