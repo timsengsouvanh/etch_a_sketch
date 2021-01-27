@@ -20,7 +20,7 @@ document.querySelectorAll(".blue").forEach(blue =>
 function createbutton1(){
     const button = document.createElement('button')
     button.textContent = 'CLEAR'
-    button.classList.add('button');
+    button.classList.add('button1');
     buttonarea.appendChild(button);
 }
 createbutton1()
@@ -28,18 +28,24 @@ createbutton1()
 function createbutton2(){
     const button = document.createElement('button')
     button.textContent = 'RESIZE'
-    button.classList.add('button');
+    button.classList.add('button2');
     buttonarea.appendChild(button);
 }
 
 createbutton2()
 
-const button = document.querySelector('button');
-
+const button1 = document.querySelector('.button1');
+const button2 = document.querySelector('.button2')
 
 //event listener to clear drawing
-button.addEventListener('click', () => {
+button1.addEventListener('click', () => {
     document.querySelectorAll('.yellow').forEach(yellow => yellow.classList.remove('yellow'))
 })
 
+//event listener to resize/clear
+button2.addEventListener('click', () => {
+    document.querySelectorAll('.yellow').forEach(yellow => yellow.classList.remove('yellow'))
+    let userinput = prompt('How many rows? (max 100)', 100)
 
+    }
+)
