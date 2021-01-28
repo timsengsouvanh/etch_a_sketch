@@ -5,15 +5,7 @@ const buttonarea = document.createElement('div');
 buttonarea.classList.add('buttonarea')
 body.appendChild(buttonarea)
 
-// //create grid squares where i=amount of squares
-// function creategrid(a) {for (let i = 0; i<a; i++){
-//     let grid = document.createElement('div');
-//     grid.classList.add('blue');
-//     container.appendChild(grid);
-// }}
-// creategrid(1024)
 
-//create grid squares where i=amount of squares
 function creategridflex(a) {for (let i = 0; i<a; i++){
     let gridflex = document.createElement('div');
     gridflex.classList.add('gridflex');
@@ -22,22 +14,15 @@ function creategridflex(a) {for (let i = 0; i<a; i++){
 
 creategridflex(30)
 
+//create grid squares where i=amount of squares
 function creategrid(a) {for (let i=0;i<a;i++){
-    // let grid = document.createElement('div');
-    // grid.classList.add('blue');
-    // document.querySelectorAll('.gridflex').forEach(gridflex => gridflex.appendChild(grid))
+ 
     let gridflex = document.querySelectorAll('.gridflex')
     gridflex.forEach(function(gridflex) {
         let grid = document.createElement('div');
         grid.classList.add('blue');
         gridflex.appendChild(grid);
     })
-    // for (i=0; i<gridflex.length;i++){
-    //     let grid = document.createElement('div');
-    //     grid.classList.add('blue');  
-    //     gridflex[i].appendChild(grid);
-        
-    // }
 }} 
 
 
@@ -70,6 +55,7 @@ createbutton2()
 
 const button1 = document.querySelector('.button1');
 const button2 = document.querySelector('.button2')
+const button3 = document.querySelector('.button3')
 
 //event listener to clear drawing
 button1.addEventListener('click', () => {
