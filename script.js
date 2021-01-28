@@ -78,8 +78,8 @@ button1.addEventListener('click', () => {
 
 //event listener to resize/clear
 button2.addEventListener('click', () => {
-    document.querySelectorAll('.yellow').forEach(yellow => yellow.classList.remove('yellow'))
-    document.querySelectorAll('.blue').forEach(blue => blue.remove())
+    document.querySelectorAll('.yellow').forEach(yellow => yellow.classList.remove('yellow'));
+    document.querySelectorAll('.gridflex').forEach(gridflex => gridflex.remove(''));
     let userinput = prompt('How many rows? (max 100)', 100)
     creategridflex(userinput)
     creategrid(userinput)
